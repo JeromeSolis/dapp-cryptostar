@@ -1,0 +1,189 @@
+truffle(develop)> migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 12882096 (0xc490b0)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        8860816
+   > block timestamp:     1625149210
+   > account:             0x098EdfFA5Adac9acCB66a6c110C4E3633C494A04
+   > balance:             20.641014649
+   > gas used:            147243 (0x23f2b)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00147243 ETH
+
+   -------------------------------------
+   > Total cost:          0.00147243 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > block number:        8860818
+   > block timestamp:     1625149216
+   > account:             0x098EdfFA5Adac9acCB66a6c110C4E3633C494A04
+   > balance:             20.616596009
+   > gas used:            2414523 (0x24d7bb)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02414523 ETH
+
+   -------------------------------------
+   > Total cost:          0.02414523 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02561766 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 12894675 (0xc4c1d3)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x0cc04c797c6bc628fc729af60a7912d6ca2abc0f48dd510f499796f65c05d8cc
+
+
+Error:  *** Deployment Failed ***
+
+"Migrations" -- Transaction was not mined within 750 seconds, please make sure your transaction was properly sent. Be aware that it might still be mined!.
+
+    at /Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at Migration._deploy (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:74:1)
+    at Migration._load (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:61:1)
+    at Migration.run (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:212:1)
+    at Object.runMigrations (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)
+    at Object.runFrom (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)
+    at Object.runAll (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)
+    at Object.run (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)
+    at runMigrations (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)
+    at Object.run (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:221:1)
+    at Command.run (/Users/jay/.nvm/versions/node/v16.2.0/lib/node_modules/truffle/build/webpack:/packages/core/lib/command.js:147:1)
+(node:55430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 data listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:55430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connect listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:55430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:55430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:55430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 disconnect listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+- Blocks: 0            Seconds: 0
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpRequestError] (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:349:1)
+    at ClientRequest._onHttpRequestError (/Users/jay/git/Dapp_CryptoStar/app/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:252:47)
+    at ClientRequest.emit (node:events:365:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:365:28)
+    at emitErrorNT (node:internal/streams/destroy:193:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
