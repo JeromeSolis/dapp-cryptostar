@@ -19,9 +19,9 @@
  */
 
 const HDWalletProvider = require('./app/node_modules/truffle-hdwallet-provider');
-const infuraKey = "aa5e279eb5084269b38ccbbf459e6807";
-
 const fs = require('fs');
+
+const infuraKey = fs.readFileSync(".key").toString().trim();
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
@@ -98,17 +98,5 @@ module.exports = {
   },
 
   // Configure your compilers
-  compilers: {
-    solc: {
-      version: "0.5.5",    // Fetch exact version from solc-bin (default: truffle's version)
-      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      // settings: {          // See the solidity docs for advice about optimization and evmVersion
-      //  optimizer: {
-      //    enabled: false,
-      //    runs: 200
-      //  },
-      //  evmVersion: "byzantium"
-      // }
-    }
-  }
+   
 }
