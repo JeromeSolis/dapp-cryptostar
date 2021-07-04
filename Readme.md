@@ -8,4 +8,4 @@
 ## ERC-721 Token
 * Name: Spacecoin
 * Symbol: SUN
-* Address (Rinkeby): 
+* Address (Ropsten): 0x3dF6d31592c717D5bE761B1b69C380B574F9863
