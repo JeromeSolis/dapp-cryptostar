@@ -18,7 +18,7 @@
  *
  */
 
-const HDWalletProvider = require("./app/node_modules/@truffle/hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 const fs = require('fs');
 
 const infuraKey = fs.readFileSync(".key").toString().trim();
