@@ -3,7 +3,7 @@
 ## Dependencies
 * Truffle v5.3.7
 * OpenZeppelin@2.4.0
-* truffle-hdwallet-provider@1.0.17
+* @truffle/hdwallet-provider@1.4.1
 
 ## ERC-721 Token
 * Name: Spacecoin
